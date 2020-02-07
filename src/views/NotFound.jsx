@@ -6,7 +6,13 @@ class NotFound extends Component{
   }
 
   render(){
-    return (<h2>Soz, It isn't here! go elsewhere (404)</h2>);
+    return (
+      <div className="not-found">
+        <h2>404 NOT FOUND</h2>
+        <h3>Sorry Mz, It isn't here! go elsewhere</h3>
+      </div>
+
+    );
   }
 }
 
