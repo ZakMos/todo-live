@@ -14,7 +14,6 @@ body {
 }
 
 // Main Header ==> Start <=== //
-
 .main-header{
   color: white;
   // background: white;
@@ -28,6 +27,11 @@ body {
   // background-repeat: no-repeat;
   background-size: cover;
 }
+
+.font-todo {
+  padding-left: 25px;
+  font-size: 40px;
+}
 // Main Header <=== End ===> //
 
 
@@ -38,7 +42,7 @@ body {
   background: #ffd89b;
   background: -webkit-linear-gradient(to bottom, #19547b, #ffd89b);
   background: linear-gradient(to bottom, #19547b, #ffd89b);
-  border-radius: 5%;
+  border-radius: 25px;
 }
 // Main <=== End ===> //
 
@@ -61,7 +65,6 @@ body {
 
 
 // Todo List ===> Start <=== //
-
 .table-borderless > tbody > tr > td,
 .table-borderless > tbody > tr > th,
 .table-borderless > tfoot > tr > td,
@@ -74,7 +77,6 @@ body {
 
 
 // Todo ListItem ===> Start <=== //
-
 .todo-item {
   td {
     padding: 0.25rem 0;
@@ -105,7 +107,7 @@ body {
     }
   }
 }
-// TODO ListItem <=== End ===> //
+// Tddo ListItem <=== End ===> //
 
 
 // Not Found Page ===> Start <=== //
@@ -128,7 +130,7 @@ body {
 
 
 // Footer ===> Start <=== //
-footer p {
+.footer {
   position: absolute;
   width: 100%;
   padding-top: 15px;
@@ -138,4 +140,15 @@ footer p {
   color: white;
   border-top: 2px solid white;
 }
+
+.link-social-anim {
+  color: white;
+  &:hover {
+    font-size: 20px;
+    color: white;
+    transform: scale(1.4);
+    @include transition(all 0.4s);
+  }
+}
+
 // Not Footer <=== End ===> //
