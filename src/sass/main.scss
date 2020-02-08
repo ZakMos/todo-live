@@ -12,11 +12,55 @@ body {
   min-height: 100%;
   background: black;
 }
-}
 
-.header {
+// Main Header ==> Start <=== //
+
+.main-header{
+  color: white;
+  // background: white;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom:2rem;
+  padding-bottom: 15px;
+  border-bottom: 2px solid white;
+  // background-image: url('https://picsum.photos/200/300');
+  // background-repeat: no-repeat;
+  background-size: cover;
+}
+// Main Header <=== End ===> //
+
+
+// Main ===> Start <=== //
+.container {
+  margin-top: 5%;
+  padding-bottom: 2%;
+  background: #ffd89b;
+  background: -webkit-linear-gradient(to bottom, #19547b, #ffd89b);
+  background: linear-gradient(to bottom, #19547b, #ffd89b);
+  border-radius: 5%;
+}
+// Main <=== End ===> //
+
+
+// Todo Header ===> Start <=== //
+.todo-header {
   margin-bottom: 1rem;
 }
+
+.tagline {
+	-webkit-animation: tagline 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tagline 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+.help {
+  margin-bottom: 1rem;
+}
+// Todo Header <=== End ===> //
+
+
+
+// Todo List ===> Start <=== //
 
 .table-borderless > tbody > tr > td,
 .table-borderless > tbody > tr > th,
@@ -26,24 +70,10 @@ body {
 .table-borderless > thead > tr > th {
   border: none;
 }
+// Todo List <=== End ===> //
 
-// Not Found Page == Start === //
-.not-found {
-  text-align: center;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  max-width: 520px;
-  width: 100%;
-  line-height: 1.4;
-  background-color: red;
-  color: white;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-// Not Found Page == End === //
 
+// Todo ListItem ===> Start <=== //
 
 .todo-item {
   td {
@@ -75,6 +105,29 @@ body {
     }
   }
 }
+// TODO ListItem <=== End ===> //
+
+
+// Not Found Page ===> Start <=== //
+.not-found {
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  max-width: 520px;
+  width: 100%;
+  line-height: 1.4;
+  background-color: red;
+  color: white;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+// Not Found Page <=== End ===> //
+
+
+
+// Footer ===> Start <=== //
 footer p {
   position: absolute;
   width: 100%;
@@ -85,3 +138,4 @@ footer p {
   color: white;
   border-top: 2px solid white;
 }
+// Not Footer <=== End ===> //
