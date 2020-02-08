@@ -1,7 +1,17 @@
 @import "../../node_modules/bootstrap/scss/bootstrap";
+@import "./anim.scss";
 
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
 body {
-  margin: 1rem;
+  position: relative;
+  margin: 0;
+  padding-bottom: 6rem;
+  min-height: 100%;
+  background: black;
+}
 }
 
 .header {
