@@ -45,7 +45,7 @@ class TodoForm extends Component {
           ref={this.todoInput}
         />
         <div className="input-group-append">
-          <button className="btn btn-outline-secondary" type="submit">
+          <button className="btn btn-primary" type="submit">
             <FontAwesomeIcon icon={faPlus} /> Add item
           </button>
         </div>
