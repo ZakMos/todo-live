@@ -133,7 +133,7 @@ body {
 .footer {
   position: absolute;
   width: 100%;
-  padding-top: 15px;
+  // padding-top: 15px;
   text-align: center;
   bottom: 0;
   background: black;
@@ -141,14 +141,18 @@ body {
   border-top: 2px solid white;
 }
 
+.footer p {
+  margin-bottom: 10px;
+}
+
 .link-social-anim {
   color: white;
   &:hover {
     font-size: 20px;
     color: white;
-    transform: scale(1.4);
+    transform: scale(1.3, 1.3);
     @include transition(all 0.4s);
   }
 }
 
-// Not Footer <=== End ===> //
+// Footer <=== End ===> //
