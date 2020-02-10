@@ -29,6 +29,12 @@ class TodoForm extends Component {
     const {addTodo} = this.props;
     const todoText = this.todoInput.current.value.trim();
 
+    // Error message when Field is empty 
+    if (todoText.length === 0) {
+      alert("Field cannot be empty!")
+      return;
+    }
+
     addTodo(todoText);
     event.target.reset();
   }
