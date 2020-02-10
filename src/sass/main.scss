@@ -76,21 +76,52 @@ body {
 // Todo List <=== End ===> //
 
 
+.filter-btn {
+  // border-color: #007bff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),
+              0 3px 1px -2px rgba(0,0,0,.2),
+              0 1px 5px 0 rgba(0,0,0,.12);
+}
+
+.text-right{
+  margin-bottom: 5px;
+
+}
+.btn-light:not(:disabled):not(.disabled).active {
+  background: #007bff;
+  color: #fff;
+  border-color: #007bff;
+}
+
+
+
+
 // Todo ListItem ===> Start <=== //
+
+.custom-control {
+  margin-top: 8px;
+}
+
 .todo-item {
   td {
     padding: 0.25rem 0;
+
   }
 
   td.col-action {
     text-align: right;
     padding-right: 0.25rem;
 
+
     .icon-remove {
       cursor: pointer;
+      margin-top: 10px;
 
       &:hover {
         color: #bd2d2d;
+        font-size: 20px;
+        transform: scale(1.3, 1.3);
+        @include transition(all 0.4s);
       }
     }
   }
@@ -104,6 +135,7 @@ body {
     &:active,
     &:focus {
       border: 1px solid #c0c0c0;
+
     }
   }
 }

@@ -22,7 +22,7 @@ const Filter = (props) => {
             <NavLink
               key={i}
               to={`/${filter}`}
-              className="btn btn-light"
+              className="filter-btn btn btn-light"
               activeClassName="active"
             >
               {capitalize(filter)}
