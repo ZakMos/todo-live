@@ -29,10 +29,11 @@ class TodoForm extends Component {
     const {addTodo} = this.props;
     const todoText = this.todoInput.current.value.trim();
 
-    // Error message when Field is empty 
+    // Error message when Field is empty
+    const error = "Field cannot be empty!";
+
     if (todoText.length === 0) {
-      alert("Field cannot be empty!")
-      return;
+      return  alert(error);
     }
 
     addTodo(todoText);
@@ -45,15 +46,17 @@ class TodoForm extends Component {
       <form className="input-group my-3" onSubmit={this.createTodo}>
         <input
           name="todo_item"
-          className="form-control"
+          className="form-control required name"
           type="text"
           placeholder="Add a new to-do item ..."
           ref={this.todoInput}
+
         />
         <div className="input-group-append">
           <button className="btn btn-primary" type="submit">
             <FontAwesomeIcon icon={faPlus} /> Add item
           </button>
+          <div id="error">{this.error}</div>
         </div>
       </form>
     )
