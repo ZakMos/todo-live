@@ -10,7 +10,7 @@
     "@fortawesome/react-fontawesome": "^0.1.8",
     "bootstrap": "^4.4.1",
     "fstream": "^1.0.12",
-    "lodash-es": "^4.17.15",
+    "lodash-es": "^4.17.14",
     "lodash.mergewith": "^4.6.2",
     "mixin-deep": "^2.0.1",
     "react": "^16.12.0",
