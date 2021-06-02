@@ -30,6 +30,10 @@ store.subscribe(() => {
   storage.save(store.getState())
 })
 
+// babel-loader
+// const ReactRefreshWebpackPlugin = isDevelopment ? require('@pmmmwh/react-refresh-webpack-plugin') : null;
+
+
 // Uses render from react-dom to render the initial application into an element
 // with id of 'root'
 render(

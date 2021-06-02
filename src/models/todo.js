@@ -1,4 +1,4 @@
-import uuid from 'uuid/v4';
+import uuid from 'react-uuid';
 
 /**
  * A Todo object model
